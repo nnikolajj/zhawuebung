@@ -14,7 +14,7 @@ public class Mastermind {
             solution.append(colors[rn.nextInt(0, colors.length)]);
         }
         int richtige = 0;
-        int weiss = 0;
+        int weiss;
 
         while (richtige != 4) {
             String input = IO.readln("Dein Zug: ");
@@ -48,5 +48,8 @@ public class Mastermind {
 
         }
         IO.println("Gratuliere, du hast gewonnen.");
+
+
+
     }
 }
