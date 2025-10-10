@@ -40,16 +40,6 @@ public class Pegelrechner {
             wasserImSee[i+1] = pegel;
 
             startWert = wasserImSee[i+1];
-
-            String a = "nutte";
-
-            if (String.valueOf(a.toLowerCase().charAt(i))== "e"){
-                System.out.println(2);
-            }
-
-            char b = a.charAt(a.length()-1);
-
-            System.out.println(b);
         }
 
         System.out.println("Maximaler Füllstand: "+maxFuellstand + " m3");
