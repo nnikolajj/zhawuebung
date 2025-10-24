@@ -49,7 +49,5 @@ public class Mastermind {
         }
         IO.println("Gratuliere, du hast gewonnen.");
 
-
-
     }
 }
