@@ -1,5 +1,7 @@
 package uebung08;
 
+import uebung08.GUI.ImageFlipTable;
+
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.Random;
@@ -26,6 +28,8 @@ public class WerIstEs {
         Random rn = new Random();
         int mIndex = rn.nextInt(merkmale.length);
 
+        ImageFlipTable flipTable = new ImageFlipTable();
+
         while (countPersonenImSpiel()>1) {
             IO.println("Personen im Spiel: "+getPersonenImSpiel());
             // Merkmal auswählen
@@ -39,6 +43,7 @@ public class WerIstEs {
             } else if (input.equals("ja")) {
                 removeWithout(merkmal);
             }
+            flipTable.flipNamesNotInList(getPersonenImSpiel().split(" "));
         }
         IO.println("Du bist " + getPersonenImSpiel());
 	}
